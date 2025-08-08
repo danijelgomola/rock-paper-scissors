@@ -14,7 +14,7 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(180deg, #2ceed1, #832cee);
 }
 
@@ -29,11 +29,11 @@ body {
 }
 
 .title {
-    max-width: 100px;
     color: #fff;
 }
 
 .scores {
+    max-width: 300px;
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
@@ -93,6 +93,7 @@ body {
     flex-wrap: wrap;
     align-content: center;
     gap: 24px;
+    margin-bottom: 32px;
 }
 
 .buttons button {
@@ -140,5 +141,34 @@ body {
     flex: 1;
     font-size: 24px;
     font-style: italic;
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+.reset {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px;
+}
+
+.reset-btn {
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    background-color: #113168;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.reset-btn:hover {
+    background-color: #fff;
+    color: #113168;
+}
+
+.reset-btn:active {
+    border: none;
+    background-color: #113168;
     color: #fff;
 }
